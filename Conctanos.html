@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="img/icono.jpeg" type="image/png">
+  <title>Carnicería Las Carnitas</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Products.html">Productos</a></li>
+        <li><a href="Ofertas.html">Ofertas</a></li>
+        <li><a href="About.html">Sobre Nosotros</a></li>
+        <li><a href="Conctanos.html">Contactanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Contactanos</h1>
+    <div class="hero-content" style="min-height: 45vh;">
+      <form id="contact-form" action="#">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      
+        <input type="submit" value="Enviar">
+      </form>
+      
+    </div>   
+    <a href="Products.html" class="btn">Ver nuestros productos</a>
+  </section>
+  <footer>
+    <p>&copy; 2023 Carnicería Las Carnitas. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita que se envíe el formulario por defecto
+
+  // Mostrar mensaje de éxito
+  alert("¡Mensaje enviado!");
+
+  // Redirigir al inicio
+  window.location.href = "index.html";
+});
+
+</script>

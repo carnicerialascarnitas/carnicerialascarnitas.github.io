@@ -1,0 +1,157 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado y navegación */
+header {
+  background-color: #fc0808;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Sección hero */
+.hero, .card-container {
+  background-image: url("https://th.bing.com/th/id/OIP.c2QmgDYRMOL-D80pWVu7ngHaEK?pid=ImgDet&rs=1");
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.card-container {
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.hero-content {
+  text-align: justify;
+  margin: auto;
+  max-width: 90%;
+}
+
+.hero-content h2 {
+  margin-bottom: 10px;
+}
+
+/* Tarjetas */
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+/* Sección sobre nosotros */
+.about {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+.about h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
